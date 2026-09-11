@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AngularPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:4200")
+            .WithOrigins("http://localhost:4200", "https://cliente-bodega-production.up.railway.app")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
